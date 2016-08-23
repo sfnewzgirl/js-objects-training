@@ -29,5 +29,34 @@
     ```
 
 */
+//SUCCESS
+//function letterCount (string) {
+//  var array = string.split("");
+//  console.log(array);
+//}
 
-// YOUR CODE HERE
+function letterCount(string) {
+  var array = string.split("");
+//  console.log(array);
+  var object = {};
+
+  for (var i = 0; i < array.length; i++) {
+    var letter = array[i];
+    if (object[letter]) {
+      object[letter] += 1;
+    } else {
+      object[letter] = 1;
+    }
+  }
+  return object;
+}
+
+letterCount("apple");
+
+
+//  for (var i = 0; i < array.length; if i++) {
+//    if (a === a) {
+//      a += 1;
+//    }
+//  }
+//}
